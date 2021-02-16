@@ -1,0 +1,11 @@
+<h1>Salary tax`s counting</h1>
+
+<ul>
+  <% @salary.each do |salary| %>
+    <li><%= salary.name %>
+      <%= salary.second_name %>
+      <%= number_to_currency(salary.salary_amount, :unit => " UAH " )%>
+    
+    </li>
+  <% end %>
+</ul>
